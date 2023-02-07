@@ -38,10 +38,11 @@ addExifEqui($pathM, 8192);
 addExifEqui($pathS, 1300);
 
 echo("done\n");
+echo("Support future improvements of this software https://www.buymeacoffee.com/fdd4s\n");
 
 function resizeEqui($pathSrc, $pathDst, $width) {
 	$height = $width / 2;
-	exec("convert \"".$pathSrc."\" -resize ".$width."x".$height." \"".$pathDst."\"");
+	exec("convert \"".$pathSrc."\" -resize ".$width."x".$height." -quality 100 \"".$pathDst."\"");
 }
 
 function getIdFromUrl($url) {
@@ -109,7 +110,7 @@ class OpSt {
 		$file_list_path = dirname(__FILE__)."/tmp-fl".$id.".txt";
 		file_put_contents($file_list_path, $file_list_data);
 
-		$montage_cmd = "montage @".$file_list_path." -tile 26x13 -geometry 500x500+0+0 -quality 95 stl-".$idSrc.".jpg";
+		$montage_cmd = "montage @".$file_list_path." -tile 26x13 -geometry 500x500+0+0 -quality 100 stl-".$idSrc.".jpg";
 		exec($montage_cmd);		
 		unlink($file_list_path);
 	}
