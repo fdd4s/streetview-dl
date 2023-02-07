@@ -17,9 +17,12 @@ This script is made to run over Linux.
 
 ## Running
 
-php ./streetview-dl.php <url between single quotes>  
+    $ php ./streetview-dl.php <url between single quotes>  
 
-e.g: php ./streeview-dl.php 'https://www.google.com/maps/@41.3881837,2.1698939,3a,75y,143.45h,92.72t/data=!3m6!1e1!3m4!1sr3vUp9U2ss5fwoq1Roxizw!2e0!7i16384!8i8192'  
+
+e.g:  
+
+    $ php php ./streeview-dl.php 'https://www.google.com/maps/@41.3881837,2.1698939,3a,75y,143.45h,92.72t/data=!3m6!1e1!3m4!1sr3vUp9U2ss5fwoq1Roxizw!2e0!7i16384!8i8192'  
 
 ## Known issues
 
