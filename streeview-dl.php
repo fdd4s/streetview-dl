@@ -60,7 +60,7 @@ class OpSt {
 	var $op_id;
 	var $op_url_list;
 
-	public function OpSt($id) {
+	public function __construct($id) {
 		$this->op_id = new OpId($id);
 		$this->op_url_list = new OpUrlList();
 	}
@@ -126,7 +126,7 @@ class OpSt {
 class OpUrlList {
 	var $url_list;
 
-	public function OpUrlList() {
+	public function __construct() {
 		$this->url_list = array();
 	}
 
@@ -179,7 +179,7 @@ class OpId {
 	var $id_src;
 	var $id_op;
 
-	public function OpId($id) {
+	public function __construct($id) {
 		$this->id_src = $id;
 		$this->id_op = $this->makeId($id);
 	}
