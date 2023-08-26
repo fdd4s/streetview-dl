@@ -1,6 +1,6 @@
 # streeview downloader an opensource Google Street View Equirectangular 360 Panoramic images downloader
 
-## What does
+## What it does
 
 streview-dl is a simple PHP script to download 360 panoramic equirectangular images from Google Street View.  
 
