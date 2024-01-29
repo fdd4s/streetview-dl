@@ -38,7 +38,6 @@ addExifEqui($pathM, 8192);
 addExifEqui($pathS, 1300);
 
 echo("done\n");
-echo("Support future improvements of this software https://www.buymeacoffee.com/fdd4s\n");
 
 function resizeEqui($pathSrc, $pathDst, $width) {
 	$height = $width / 2;
